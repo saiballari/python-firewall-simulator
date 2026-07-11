@@ -134,7 +134,7 @@ python-firewall-simulator/
 
 ## 🔍 Search Logs
 
-![Search Logs](Search_Logs.png)
+![Search Logs](Search_logs.png)
 
 ---
 
