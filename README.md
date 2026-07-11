@@ -104,37 +104,37 @@ python-firewall-simulator/
 
 ## 🔐 Login Screen
 
-![Login](screenshots/login.png)
+![Login](login.png)
 
 ---
 
 ## 🖥️ Firewall Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![DashBoard](DashBoard.png)
 
 ---
 
 ## 📝 Firewall Logs
 
-![Logs](screenshots/logs.png)
+![Logs](Logs.png)
 
 ---
 
 ## 🚫 Blacklisted IPs
 
-![Blacklist](screenshots/blacklist.png)
+![Blacklist](Blacklist.png)
 
 ---
 
 ## 📊 Firewall Statistics
 
-![Statistics](screenshots/statistics.png)
+![Statistics](Statistics.png)
 
 ---
 
 ## 🔍 Search Logs
 
-![Search Logs](screenshots/search_logs.png)
+![Search Logs](Search_Logs.png)
 
 ---
 
