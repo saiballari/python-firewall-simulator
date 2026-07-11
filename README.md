@@ -239,7 +239,7 @@ This project helped me gain practical experience in:
 https://github.com/saiballari
 
 ### 💼 LinkedIn
-https://www.linkedin.com/in/venkata-sai-ballari-6a9737398/
+https://www.linkedin.com/feed/update/urn:li:activity:7481747028537139200/
 
 ### 📧 Email
 
