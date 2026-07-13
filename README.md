@@ -1,278 +1,328 @@
-
 <div align="center">
 
-# 🛡️ Python Firewall Simulator
+# 🚀 TaskFlow
 
-### 🚀 A GUI-Based Cybersecurity Firewall Simulator Built with Python
+### A Modern Full Stack Task Management Application Built with the MERN Stack
 
-<p>
-A professional desktop-based Firewall Simulator developed using <strong>Python</strong> and <strong>Tkinter</strong>. This project demonstrates core firewall concepts including IP filtering, port filtering, blacklist management, activity logging, statistics monitoring, and CSV report generation through a modern graphical user interface.
-</p>
+TaskFlow is a secure, scalable, and responsive task management application designed to help users organize, prioritize, and track their daily work efficiently. Built using the MERN Stack, it demonstrates modern full-stack development practices including authentication, RESTful APIs, database integration, and cloud deployment.
 
-<p>
-
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![Tkinter](https://img.shields.io/badge/Tkinter-GUI-green?style=for-the-badge)
-![Cyber Security](https://img.shields.io/badge/Cyber-Security-red?style=for-the-badge)
-![CSV](https://img.shields.io/badge/CSV-Report-success?style=for-the-badge)
-![GUI](https://img.shields.io/badge/Desktop-Application-blueviolet?style=for-the-badge)
-
-</p>
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![JWT](https://img.shields.io/badge/JWT-Authentication-orange?style=for-the-badge)](https://jwt.io/)
+[![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
+[![Render](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render)](https://render.com/)
 
 </div>
 
 ---
 
-# 📖 About The Project
+# 🌐 Live Application
 
-The **Python Firewall Simulator** is a desktop-based cybersecurity application designed to simulate the basic functionality of a firewall.
+### 🔗 Frontend
 
-It enables users to:
+https://YOUR-VERCEL-URL.vercel.app
 
-- 🌐 Monitor simulated network access
-- 🚫 Block IP addresses
-- 🚪 Block specific ports
-- 📋 Manage blacklisted IP addresses
-- 📝 Record firewall activity logs
-- 🔍 Search security logs
-- 📊 Monitor firewall statistics
-- 📁 Export logs to CSV reports
+### 🔗 Backend API
 
-The project provides a practical understanding of firewall concepts and security monitoring through an interactive graphical interface.
+https://taskflow-2-u9nr.onrender.com
+
+> Experience the complete application with secure authentication, task management, analytics, search, filtering, and responsive design.
 
 ---
 
-# ✨ Features
+# 📖 Overview
 
-- 🔐 Secure Admin Login
-- 🌐 IP Address Filtering
-- 🚪 Port Filtering
-- 🚫 Add IP to Blacklist
-- 🗑 Remove IP from Blacklist
-- 📋 Display Blacklisted IP Addresses
-- 📝 Firewall Activity Logging
-- 🔍 Search Logs by IP Address
-- 📊 Firewall Statistics Dashboard
-- 📁 Export Logs to CSV
-- 💾 Persistent Blacklist Storage
-- 🖥 Interactive Tkinter GUI
-- ⚡ Clean & User-Friendly Interface
+TaskFlow provides a centralized platform where users can securely manage their daily tasks through a modern dashboard.
+
+The application follows a complete MERN architecture with JWT-based authentication, REST APIs, MongoDB Atlas integration, and production deployment using Vercel and Render.
+
+The project was developed to demonstrate production-ready full-stack development practices including secure authentication, CRUD operations, responsive UI, and cloud deployment.
 
 ---
 
-# 🛠️ Tech Stack
+# ✨ Key Features
+
+### 🔐 Authentication
+
+- Secure User Registration
+- User Login
+- JWT Authentication
+- Protected Routes
+- Password Hashing using bcrypt
+
+### 📋 Task Management
+
+- Create Tasks
+- Update Tasks
+- Delete Tasks
+- View Personal Tasks
+- Persistent Data Storage
+
+### 🎯 Productivity
+
+- Priority Management
+  - 🔴 High
+  - 🟡 Medium
+  - 🟢 Low
+
+- Due Date Support
+
+- Pending & Completed Status
+
+### 🔍 Search & Filtering
+
+- Search by Title
+- Search by Description
+- Filter by Status
+- Filter by Priority
+- Automatic Due Date Sorting
+
+### 📊 Dashboard Analytics
+
+- Total Tasks
+- Pending Tasks
+- Completed Tasks
+- Interactive Pie Chart
+- Live Dashboard Statistics
+
+### 🎨 User Interface
+
+- Responsive Design
+- Modern Dashboard
+- Toast Notifications
+- Mobile Friendly
+- Clean User Experience
+
+---
+
+# 🛠 Tech Stack
 
 | Category | Technologies |
-|----------|--------------|
-| Language | Python 3 |
-| GUI | Tkinter |
-| File Handling | Text Files |
-| Logging | Datetime Module |
-| Report Generation | CSV |
+|-----------|--------------|
+| Frontend | React.js, Vite, Axios, React Router DOM |
+| Backend | Node.js, Express.js |
+| Database | MongoDB Atlas |
+| Authentication | JWT, bcryptjs |
+| Charts | Recharts |
+| Notifications | React Toastify |
+| Deployment | Vercel, Render |
 | Version Control | Git & GitHub |
+
+---
+
+# 🏗 System Architecture
+
+```
+                    React Frontend
+                           │
+                           │
+                    Axios HTTP Requests
+                           │
+                           ▼
+                 Express REST API Server
+                           │
+                 JWT Authentication
+                           │
+                           ▼
+                    MongoDB Atlas
+```
 
 ---
 
 # 📂 Project Structure
 
-```text
-python-firewall-simulator/
+```
+TaskFlow
 │
-├── login_firewall.py
-├── firewall_gui.py
-├── firewall.py
-├── config.py
-├── utils.py
-├── blacklist.txt
-├── firewall_log.txt
-├── firewall_report.csv
-├── screenshots/
-│   ├── login.png
-│   ├── dashboard.png
-│   ├── logs.png
-│   ├── blacklist.png
-│   ├── statistics.png
-│   └── search_logs.png
+├── client
+│   ├── src
+│   │
+│   ├── components
+│   ├── pages
+│   ├── services
+│   ├── assets
+│   └── main.jsx
 │
-├── .gitignore
+├── server
+│   ├── config
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── server.js
+│   └── package.json
+│
 └── README.md
 ```
 
 ---
 
-# 📸 Project Preview
-
-## 🔐 Login Screen
-
-![Login](login.png)
-
----
-
-## 🖥️ Firewall Dashboard
-
-![DashBoard](DashBoard.png)
-
----
-
-## 📝 Firewall Logs
-
-![Logs](Logs.png)
-
----
-
-## 🚫 Blacklisted IPs
-
-![Blacklist](Blacklist.png)
-
----
-
-## 📊 Firewall Statistics
-
-![Statistics](Statistics.png)
-
----
-
-## 🔍 Search Logs
-
-![Search Logs](Search_logs.png)
-
----
-
-# 🚀 Installation
+# ⚙ Installation
 
 ## Clone Repository
 
 ```bash
-git clone https://github.com/saiballari/python-firewall-simulator.git
+git clone https://github.com/saiballari/taskflow.git
 ```
 
 ---
 
-## Navigate to Project
+## Backend
 
 ```bash
-cd python-firewall-simulator
+cd server
+
+npm install
+
+npm start
 ```
 
 ---
 
-## Run Application
+## Frontend
 
 ```bash
-python login_firewall.py
+cd client
+
+npm install
+
+npm run dev
 ```
 
 ---
 
-# 🔑 Default Login Credentials
+# 🔑 Environment Variables
 
-| Username | Password |
+## Backend
+
+```env
+PORT=5000
+
+MONGODB_URI=YOUR_MONGODB_URI
+
+JWT_SECRET=YOUR_SECRET_KEY
+```
+
+---
+
+## Frontend
+
+```env
+VITE_API_URL=https://taskflow-2-u9nr.onrender.com/api
+```
+
+---
+
+# 📡 REST API
+
+## Authentication
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | /api/auth/register | Register User |
+| POST | /api/auth/login | Login User |
+
+---
+
+## Tasks
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | /api/tasks | Get All Tasks |
+| POST | /api/tasks | Create Task |
+| PUT | /api/tasks/:id | Update Task |
+| DELETE | /api/tasks/:id | Delete Task |
+
+---
+
+# 🚀 Production Deployment
+
+| Service | Platform |
 |----------|----------|
-| admin | admin123 |
-
-> You can modify these credentials directly in the source code if required.
-
----
-
-# 🎯 Key Highlights
-
-✅ GUI-Based Firewall Simulator
-
-✅ Admin Authentication
-
-✅ IP & Port Filtering
-
-✅ Blacklist Management
-
-✅ Security Event Logging
-
-✅ Search Logs Functionality
-
-✅ Firewall Statistics Dashboard
-
-✅ CSV Report Export
-
-✅ Persistent Data Storage
+| Frontend | Vercel |
+| Backend | Render |
+| Database | MongoDB Atlas |
 
 ---
 
-# 📚 Learning Outcomes
+# 🎯 Project Highlights
 
-This project helped me gain practical experience in:
+- Production-ready MERN Stack Application
+- Secure JWT Authentication
+- RESTful API Architecture
+- MongoDB Atlas Integration
+- Cloud Deployment
+- Interactive Dashboard
+- Task Analytics
+- Search & Advanced Filtering
+- Responsive User Interface
+- Clean & Scalable Folder Structure
 
-- Firewall Fundamentals
-- Cybersecurity Concepts
-- Python Programming
-- Tkinter GUI Development
-- File Handling
-- Logging Systems
-- CSV Report Generation
-- Software Design
+---
+
+# 📚 What I Learned
+
+Through this project, I strengthened my understanding of:
+
+- Full Stack MERN Development
+- REST API Design
+- JWT Authentication
+- MongoDB Atlas Integration
+- Express Middleware
+- React State Management
+- Axios API Communication
+- Cloud Deployment
 - Git & GitHub Workflow
+- Production Environment Configuration
 
 ---
 
 # 🚀 Future Enhancements
 
-- 🌐 Real-Time Network Traffic Monitoring
-- 🗄 Database Integration
-- 👥 Multiple User Authentication
-- 📧 Email Alerts
-- 📊 Interactive Graph Dashboard
-- ⚙ Advanced Firewall Rule Management
-- 📡 Packet Inspection Simulation
+- Calendar View
+- Kanban Board
+- Dark Mode
+- Team Collaboration
+- Email Notifications
+- File Attachments
+- AI Task Suggestions
+- Activity History
 
 ---
 
 # 👨‍💻 Developer
 
-## **Sai Ballari**
+## Sai Ballari
 
-**Full Stack Developer | Cybersecurity Enthusiast | Java Programmer**
+**Full Stack Developer | Java Programmer | Cybersecurity Enthusiast**
 
----
-
-# 🔗 Connect With Me
-
-### 💻 GitHub
+### GitHub
 
 https://github.com/saiballari
 
-### 💼 LinkedIn
-https://www.linkedin.com/feed/update/urn:li:activity:7481747028537139200/
+### Portfolio
 
-### 📧 Email
+https://portfoilo-website-green.vercel.app/
 
-ballarisai10@gmail.com
+### LinkedIn
 
----
-
-# 🙏 Acknowledgements
-
-This project was developed for educational purposes to demonstrate the fundamentals of firewall systems, network security, GUI application development, and Python programming.
-
-It reflects my interest in cybersecurity and practical software development.
+(Add your LinkedIn profile URL)
 
 ---
 
 # ⭐ Support
 
-If you found this project useful,
+If you found this project interesting or useful, consider giving this repository a ⭐ on GitHub.
 
-⭐ Star this repository
-
-🍴 Fork this repository
-
-📢 Share it with others
+It helps others discover the project and motivates future development.
 
 ---
 
 <div align="center">
 
-## ⭐ Thank You for Visiting!
+### Thank you for visiting the repository!
 
-If you like this project, don't forget to leave a ⭐ on GitHub.
-
-Made with ❤️ by **Sai Ballari**
+Built with ❤️ using the MERN Stack by **Sai Ballari**
 
 </div>
